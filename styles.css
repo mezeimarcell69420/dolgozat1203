@@ -1,85 +1,96 @@
 body {
-  background-attachment: fixed;
-  background-size: cover;
+  font-family: sans-serif;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  color: white;
-  font-family: Geneva, sans-serif;
-  background-image: url(./hatter.jpg);
+  background-attachment: fixed;
+  background-image: url(hatter.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-#tartalom {
-  background-color: rgba(4, 42, 63, 0.8);
+#content {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 40px;
-  width: 900px;
-  margin: 20px;
-  margin: auto;
+  width: 980px;
 }
 
-.keret {
-  padding: 10px 25px 0px 25px;
-  margin: auto 20px;
-  max-width: 800px;
-  border-bottom: 2px solid rgb(58, 189, 201);
-
-}
-.keret.img{
-  padding-bottom: 10px;
-  max-width: 800px;
-  border-bottom: 2px solid rgb(58, 189, 201);
-
+.frame {
+  width: 490px;
+  float: right;
+  padding: 0px 5px 5px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(227, 225, 233, 0.8);
 }
 
+.frame img {
+  width: 499px;
+  position: relative;
+  left: -5px;
+  border-bottom: 2px solid black;
+}
 
-.kepalairas {
-  font-size: 1.3em;
+h1,
+h2 {
+  font-variant: small-caps;
+  font-style: italic;
+}
+
+p.imgtitle {
+  font-size: 1.1em;
   margin: 0;
   font-style: italic;
   text-align: center;
-  line-height: 130%;
+  height: 130%;
 }
 
-table {
-  background-color: rgba(227, 225, 233, 0.3);
-  border: 3px solid rgb(58, 189, 201);
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
+table,
+.frame {
+  border: 3px solid green;
 }
 
-th {
-  background-color: rgba(58, 189, 201, 0.6);
-  color: white;
+a:link,
+a:visited {
+  color: blue;
 }
 
-th,
-td {
-  border: 1px solid rgb(58, 189, 201);
-  padding: 5px;
+p{
+  text-align: justify;
+  text-indent: 25px;
 }
 
-span{
-  font-weight: bold;
-  color: cyan;
+td{
+ border: 1px solid black; 
+
+ background-color: rgba(227, 225, 233, 0.8) ;
+ 
 }
 
-h1,h2{
-  font-style: italic;
+th{
+ background-color: green; 
+ color: white;
 }
 
-a,
-a:visited{
-  color: rgb(58, 189, 201);
+a{
   text-decoration: none;
+cursor: yellow;
 }
 
 a:hover{
   color: yellow;
 }
 
-p{
-  line-height: justify;
-  text-indent: 20py;
+table{
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 15px;
 }
